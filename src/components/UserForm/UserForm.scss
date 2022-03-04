@@ -1,0 +1,26 @@
+@import "styles/colors.scss";
+@import "styles/layout.scss";
+
+.userform {
+  padding: $base-padding;
+  form {
+    display: grid;
+    gap: $base-padding;
+    input,
+    button {
+      padding: $base-padding/2;
+      font-size: 1rem;
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+    }
+    input {
+      outline: none;
+      border: 1px solid $text-color;
+      border-radius: 5px;
+    }
+  }
+  h1 {
+    margin-bottom: $base-padding;
+  }
+}
